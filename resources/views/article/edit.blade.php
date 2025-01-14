@@ -8,7 +8,7 @@
         </div>
         <div class="row px-4">
             <div class="col-12">
-                <livewire:article-edit />
+                <livewire:article-edit :article="$article" />
             </div>
         </div>
     </div>

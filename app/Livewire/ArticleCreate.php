@@ -31,7 +31,7 @@ public function store()
         'body' => $this->body
     ]);
 
-    session()->flash('message', 'Articolo creato con successo');
+    session()->flash('message', 'Article created successfully');
     $this->title = '';
     $this->subtitle = '';
     $this->body = '';
