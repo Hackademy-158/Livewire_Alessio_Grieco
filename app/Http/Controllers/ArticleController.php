@@ -10,7 +10,11 @@ class ArticleController extends Controller
 
     public function index()
     {
-        //
+        $articles = Article::all();
+        return view(
+            'article.index',
+            compact('articles')
+        );
     }
 
     /**
@@ -42,16 +46,16 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        //
+        return view(
+            'article.edit',
+            compact('article')
+        );
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Article $article)
-    {
-        //
-    }
+    public function update(Request $request, Article $article) {}
 
     /**
      * Remove the specified resource from storage.
