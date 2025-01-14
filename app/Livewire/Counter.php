@@ -22,4 +22,13 @@ class Counter extends Component
     {
         $this->value--;
     }
+
+    public function incrementByNumber($number)
+    {
+        $this->value += $number;
+    }
+    public function decrementByNumber($number)
+    {
+        $this->value -= $number;
+    }
 }
