@@ -1,4 +1,5 @@
 <x-layout>
+    <div class="card-body">
     <div class="container">
         <div class="row px-4 mt-4">
             <div class="col-12">
@@ -10,5 +11,6 @@
                 <livewire:article-create />
             </div>
         </div>
+    </div>
     </div>
 </x-layout>
